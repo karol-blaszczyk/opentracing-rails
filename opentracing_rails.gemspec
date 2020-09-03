@@ -15,11 +15,11 @@ Gem::Specification.new do |s|
     s.license     = 'Apache-2.0'
 
     # Dependencies
-    s.add_dependency('rack-tracer', '~> 0.3.0')
-    s.add_dependency('faraday', '~> 0.14.0')
-    s.add_dependency('faraday-tracer', '~> 0.2.0')
+    s.add_dependency('rack-tracer')
+    s.add_runtime_dependency 'faraday', '>= 0.9', '< 2.0'
+    s.add_dependency('faraday-tracer')
 
     # Development dependencies
-    s.add_development_dependency('rails', '> 3')
-    s.add_development_dependency('rspec', '~> 3.7')
+    s.add_development_dependency('rails')
+    s.add_development_dependency('rspec')
 end
